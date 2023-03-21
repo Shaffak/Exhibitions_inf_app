@@ -1,0 +1,21 @@
+<h1>Here your all Brands</h1>
+
+
+
+<div class='btn-btn-primary'>
+<p>Now is <%= Time.now %></p>
+</div>
+
+
+<h2>Meet our brands</h2>
+
+<ol>
+<% @brands.each do |brand| %>
+<li><%= brand.capitalize %></li>
+<%end%>
+
+</ol>
+
+
+
+<%= link_to "Know more about us", about_path %>
