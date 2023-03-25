@@ -13,13 +13,45 @@ Exhibition.destroy_all
 
 puts "Creating Exhibitions"
 
-10.times do
+
   exhibition = Exhibition.create(
     name:"London ICE",
     date:"10 May",
     rating: rand(1..5)
   )
   puts "Exhibition with id #{exhibition.id} has been created"
-end
+
+
+  exhibition = Exhibition.create(
+    name:"SIGMA Dubai",
+    date:"10 May",
+    rating: rand(1..5)
+  )
+  puts "Exhibition with id #{exhibition.id} has been created"
+
+
+  exhibition = Exhibition.create(
+    name:"SBC Malta",
+    date:"10 May",
+    rating: rand(1..5)
+  )
+  puts "Exhibition with id #{exhibition.id} has been created"
+
+
+  exhibition = Exhibition.create(
+    name:"SIGMA Europe",
+    date:"10 May",
+    rating: rand(1..5)
+  )
+  puts "Exhibition with id #{exhibition.id} has been created"
+
+
+  exhibition = Exhibition.create(
+    name:"Money 2020/USA",
+    date:"10 May",
+    rating: rand(1..5)
+  )
+  puts "Exhibition with id #{exhibition.id} has been created"
+
 
 puts "Finished"

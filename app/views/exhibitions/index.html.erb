@@ -10,7 +10,10 @@
 <ol id="exhibitions">
 <% @exhibition.each do |exhibition| %>
 <div class='btn-btn primary'>
-<li><%= link_to exhibition.name, exhibition_path(exhibition.id) %></li>
+<div class="justify content center">
+<li><%= link_to exhibition.name, exhibition_path(exhibition.id) %>
+<%= exhibition.date %></li>
+</div>
 <%= link_to exhibition_path(exhibition.id), data: {turbo_method: :delete, turbo_confirm: "Delete #{exhibition.id}?"} do %>
 <i class="fa-regular fa-trash-can"></i>
 <% end %>
