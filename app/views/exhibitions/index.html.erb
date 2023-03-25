@@ -1,0 +1,22 @@
+<h1>My Exhibitions</h1>
+<p>Show all exhibitions according to their own specifications</p>
+<h3>Marketing materials</h3>
+
+<h3>WEBSOCKET</h3>
+
+
+
+
+<ol>
+<% @exhibition.each do |exhibition| %>
+<div class='btn-btn primary'>
+<li><%= exhibition.name%></li>
+<%end%>
+</div>
+</ol>
+
+
+<%= link_to new_exhibition_path do %>
+    <i class="fa-solid fa-plus"></i> Add a new exhibition
+  <% end %>
+</div>

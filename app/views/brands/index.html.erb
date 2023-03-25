@@ -1,0 +1,21 @@
+<h1>Brands#index</h1>
+<p>Show all brands according to their own specifications</p>
+<h3>Marketing materials</h3>
+<h3>Sponsorship package</h3>
+<h3>WEBSOCKET</h3>
+<h3>Awards nominationss</h3>
+
+<%= button_to "New", action: "new" %>
+ <form class='btn btn-primary' method="post" action="/controller/new" class="button_to">
+     <div><input value="New" type="submit" /></div>
+     <% link_to 'new' %>
+  </form>
+
+
+<ol>
+<% @brands.each do |brand| %>
+<div class='btn-btn primary'>
+<li><%= brand.capitalize %></li>
+<%end%>
+</div>
+</ol>
