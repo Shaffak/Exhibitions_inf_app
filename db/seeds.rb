@@ -9,3 +9,17 @@
 
 puts "Cleaning database..."
 Exhibition.destroy_all
+
+
+puts "Creating Exhibitions"
+
+10.times do
+  exhibition = Exhibition.create(
+    name:"London ICE",
+    date:"10 May",
+    rating: rand(1..5)
+  )
+  puts "Exhibition with id #{exhibition.id} has been created"
+end
+
+puts "Finished"
