@@ -1,3 +1,5 @@
+
+<div class ='justify content align'>
 <%= form_with model: @exhibition do |f| %>
   <div class="form-group">
     <%= f.label :name%>
@@ -6,7 +8,7 @@
 
  </div class="form-group">
     <%= f.label :date%>
-    <%= f.text_field :date, class: 'form-control' %>
+    <%= f.number_field :date, class: 'form-control' %>
   </div>
 
   <div class="form-group">
@@ -14,6 +16,23 @@
     <%= f.text_area :details, class: 'form-control' %>
   </div>
 
+  <div class="form-group">
+    <%= f.label :marketing%>
+    <%= f.text_area :marketing, class: 'form-control' %>
+  </div>
+
+
+<div class="form-group">
+    <%= f.label :sponsors%>
+    <%= f.text_area :sponsors, class: 'form-control' %>
+  </div>
+
+<div class="form-group">
+    <%= f.label :exhibitors%>
+    <%= f.text_area :exhibitiors, class: 'form-control' %>
+  </div>
 
   <%= f.submit class: 'btn btn-primary mt-3' %>
 <% end %>
+
+</div>

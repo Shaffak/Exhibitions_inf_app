@@ -22,6 +22,7 @@ class ExhibitionsController < ApplicationController
   end
 
   def update
+    @exhibition = Exhibition.find(params[:id])
     @exhibition.update(exhibition_params)
     redirect_to exhibition_path(@exhibition)
   end

@@ -1,4 +1,4 @@
-<h1>My Exhibitions</h1>
+<h1>Guardian Professional Exhibition Schedule</h1>
 <p>Show all exhibitions according to their own specifications</p>
 <h3>Marketing materials</h3>
 
@@ -12,7 +12,6 @@
 <div class='btn-btn primary'>
 <div class="justify content center">
 <li><%= link_to exhibition.name, exhibition_path(exhibition.id) %>
-<%= exhibition.date %></li>
 </div>
 <%= link_to exhibition_path(exhibition.id), data: {turbo_method: :delete, turbo_confirm: "Delete #{exhibition.id}?"} do %>
 <i class="fa-regular fa-trash-can"></i>

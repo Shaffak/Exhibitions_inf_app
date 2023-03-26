@@ -1,13 +1,4 @@
 
 <div class='btn btn primary x=100px m-0'>
 
-<%= form_with model: @brand do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :address %>
-  <%= f.text_field :date %>
-  <%= f.label :rating %>
-  <%= f.number_field :rating %>
-  <%= f.submit %>
-<% end %>
-</div>
+<%= render 'form', exhibition: @exhibition %>
